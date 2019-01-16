@@ -2,6 +2,8 @@
 
 Takes HTML and outputs ProseMirror compatible JSON.
 
+[![](https://img.shields.io/packagist/v/scrumpy/html-to-prosemirror.svg)](https://packagist.org/packages/scrumpy/html-to-prosemirror)
+
 ## Installation
 
 `composer require scrumpy/html-to-prosemirror`
