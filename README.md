@@ -14,6 +14,23 @@ Takes HTML and outputs ProseMirror compatible JSON.
 
     (new \Scrumpy\HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
 
+## Output
+
+    {
+        "type": "doc",
+        "content": [
+            {
+                "type": "paragraph",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "Example Text"
+                    }
+                ]
+            }
+        ]
+    }
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
