@@ -29,4 +29,30 @@ class CodeBlockTest extends TestCase
 
         $this->assertEquals($json, (new Renderer)->render($html));
     }
+
+    /** @test */
+    public function code_block_with_language_gets_rendered_correctly()
+    {
+        $html = '<pre><code class="language-css">body { display: none }</code></pre>';
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'code_block',
+                    'attrs' => [
+                        'language' => 'css',
+                    ],
+                    'content' => [
+                        [
+                            'type' => 'text',
+                            'text' => 'body { display: none }',
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->render($html));
+    }
 }
