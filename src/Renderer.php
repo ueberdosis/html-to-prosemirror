@@ -23,6 +23,7 @@ class Renderer
         Nodes\BulletList::class,
         Nodes\CodeBlock::class,
         Nodes\CodeBlockWrapper::class,
+        Nodes\HardBreak::class,
         Nodes\Heading::class,
         Nodes\ListItem::class,
         Nodes\OrderedList::class,

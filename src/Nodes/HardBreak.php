@@ -2,17 +2,17 @@
 
 namespace Scrumpy\HtmlToProseMirror\Nodes;
 
-class Paragraph extends Node
+class HardBreak extends Node
 {
     public function matching()
     {
-        return $this->DOMNode->nodeName === 'p';
+        return $this->DOMNode->nodeName === 'br';
     }
 
     public function data()
     {
         return [
-            'type' => 'paragraph',
+            'type' => 'hard_break',
         ];
     }
 }
