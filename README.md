@@ -8,28 +8,34 @@ Takes HTML and outputs ProseMirror compatible JSON.
 
 ## Installation
 
-    composer require scrumpy/html-to-prosemirror
+```bash
+composer require scrumpy/html-to-prosemirror
+```
 
 ## Usage
 
-    (new \Scrumpy\HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
+```php
+(new \Scrumpy\HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
+```
 
 ## Output
 
-    {
-        "type": "doc",
-        "content": [
-            {
-                "type": "paragraph",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": "Example Text"
-                    }
-                ]
-            }
-        ]
-    }
+```json
+{
+    "type": "doc",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Example Text"
+                }
+            ]
+        }
+    ]
+}
+```
 
 ## Contributing
 
