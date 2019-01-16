@@ -1,6 +1,10 @@
-# scrumpy/html-to-prosemirror
+# HTML to ProseMirror
 
 Takes HTML and outputs ProseMirror compatible JSON.
+
+## Installation
+
+`composer require scrumpy/html-to-prosemirror`
 
 ## Contributing
 
