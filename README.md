@@ -6,7 +6,11 @@ Takes HTML and outputs ProseMirror compatible JSON.
 
 ## Installation
 
-`composer require scrumpy/html-to-prosemirror`
+    composer require scrumpy/html-to-prosemirror
+
+## Usage
+
+    (new \Scrumpy\HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
 
 ## Contributing
 
