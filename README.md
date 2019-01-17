@@ -37,10 +37,6 @@ composer require scrumpy/html-to-prosemirror
 }
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
 ## Credits
 
 - [Hans Pagel](https://github.com/hanspagel)
