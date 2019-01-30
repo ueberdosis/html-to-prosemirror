@@ -8,9 +8,38 @@ use Scrumpy\HtmlToProseMirror\Test\TestCase;
 class WhitespaceTest extends TestCase
 {
     /** @test */
-    public function new_line_characters_are_stripped()
+    public function whitespace_at_the_beginning_is_stripped()
     {
-        $html = "<p>Example\n Text</p>";
+        $html = "<p>\nExample\n Text</p>";
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'paragraph',
+                    'content' => [
+                        [
+                            'type' => 'text',
+                            'text' => "Example\nText",
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->render($html));
+    }
+
+    /** @test */
+    public function whitespace_in_code_blocks_is_ignored()
+    {
+        $html = "<p>\n" .
+                "    Example Text\n" .
+                "</p>\n" .
+                "<pre><code>\n" .
+                "Line of Code\n" .
+                "    Line of Code 2\n" .
+                "Line of Code</code></pre>";
 
         $json = [
             'type' => 'doc',
@@ -24,9 +53,20 @@ class WhitespaceTest extends TestCase
                         ],
                     ],
                 ],
+                [
+                    'type' => 'code_block',
+                    'content' => [
+                        [
+                            'type' => 'text',
+                            'text' => "Line of Code\n    Line of Code 2\nLine of Code",
+                        ],
+                    ],
+                ],
             ],
         ];
 
+
+        // $this->outputJson((new Renderer)->render($html));
         $this->assertEquals($json, (new Renderer)->render($html));
     }
 }

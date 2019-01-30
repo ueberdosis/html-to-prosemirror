@@ -5,6 +5,7 @@ namespace Scrumpy\HtmlToProseMirror;
 use Exception;
 use DOMElement;
 use DOMDocument;
+use Minify_HTML;
 
 class Renderer
 {
@@ -60,8 +61,7 @@ class Renderer
 
     private function stripWhitespace(string $value): string
     {
-        $value = str_replace("  ", "", $value);
-        return preg_replace("/\r|\n/", "", $value);
+        return Minify_HTML::minify($value);
     }
 
     private function getDocumentBody(): DOMElement

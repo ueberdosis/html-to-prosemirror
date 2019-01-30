@@ -13,7 +13,7 @@ class Text extends Node
     {
         return [
             'type' => 'text',
-            'text' => $this->DOMNode->nodeValue,
+            'text' => ltrim($this->DOMNode->nodeValue, "\n"),
         ];
     }
 }
