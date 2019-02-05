@@ -53,10 +53,17 @@ class Renderer
 
         $this->document = new DOMDocument;
         $this->document->loadHTML(
-            $this->stripWhitespace($value)
+            $this->wrapHtmlDocument(
+                $this->stripWhitespace($value)
+            )
         );
 
         return $this;
+    }
+
+    private function wrapHtmlDocument($value)
+    {
+        return '<?xml encoding="utf-8" ?>' . $value;
     }
 
     private function stripWhitespace(string $value): string
