@@ -11,9 +11,15 @@ class Text extends Node
 
     public function data()
     {
+        $text = ltrim($this->DOMNode->nodeValue, "\n");
+
+        if ($text === '') {
+            return null;
+        }
+
         return [
             'type' => 'text',
-            'text' => ltrim($this->DOMNode->nodeValue, "\n"),
+            'text' => $text,
         ];
     }
 }

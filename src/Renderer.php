@@ -85,7 +85,9 @@ class Renderer
                 $item = $class->data();
 
                 if ($item === null) {
-                    $nodes = array_merge($nodes, $this->renderChildren($child));
+                    if ($child->hasChildNodes()) {
+                        $nodes = array_merge($nodes, $this->renderChildren($child));
+                    }
                     continue;
                 }
 
