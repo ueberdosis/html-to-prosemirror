@@ -107,7 +107,7 @@ class Renderer
                 if ($class->wrapper) {
                     $item['content'] = [
                         array_merge($class->wrapper, [
-                            'content' => $item['content'],
+                            'content' => @$item['content'] ?: [],
                         ]),
                     ];
                 }

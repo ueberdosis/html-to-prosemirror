@@ -109,4 +109,32 @@ class BulletListTest extends TestCase
 
         $this->assertEquals($json, (new Renderer)->render($html));
     }
+
+    /** @test */
+    public function list_items_with_space_get_rendered_correctly()
+    {
+        $html = "<ul><li> </li></ul>";
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'bullet_list',
+                    'content' => [
+                        [
+                            'type' => 'list_item',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->render($html));
+    }
 }
