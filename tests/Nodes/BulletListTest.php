@@ -53,4 +53,51 @@ class BulletListTest extends TestCase
 
         $this->assertEquals($json, (new Renderer)->render($html));
     }
+
+    /** @test */
+    public function bullet_list_item_with_text_only_gets_wrapped_in_paragraph()
+    {
+        $html = '<ul><li>Example</li><li>Text</li></ul>';
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'bullet_list',
+                    'content' => [
+                        [
+                            'type' => 'list_item',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Example',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            'type' => 'list_item',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Text',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->render($html));
+    }
 }
