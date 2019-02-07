@@ -108,7 +108,7 @@ class Renderer
                     $item['content'] = [
                         array_merge($class->wrapper, [
                             'content' => $item['content'],
-                        ])
+                        ]),
                     ];
                 }
 

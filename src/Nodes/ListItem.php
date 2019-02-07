@@ -11,7 +11,7 @@ class ListItem extends Node
 
     public function data()
     {
-        if (count($this->DOMNode->childNodes) > 1) {
+        if ($this->DOMNode->childNodes->length > 1) {
             $this->wrapper = [
                 'type' => 'paragraph',
             ];
