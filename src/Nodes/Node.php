@@ -4,6 +4,8 @@ namespace Scrumpy\HtmlToProseMirror\Nodes;
 
 class Node
 {
+    public $wrapper = null;
+
     public $type = 'node';
 
     protected $DOMNode;

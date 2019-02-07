@@ -104,6 +104,14 @@ class Renderer
                     $this->storedMarks = [];
                 }
 
+                if ($class->wrapper) {
+                    $item['content'] = [
+                        array_merge($class->wrapper, [
+                            'content' => $item['content'],
+                        ])
+                    ];
+                }
+
                 array_push($nodes, $item);
             }
 
