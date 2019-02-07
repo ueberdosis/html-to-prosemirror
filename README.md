@@ -1,4 +1,4 @@
-# HTML to ProseMirror
+# HTML to ProseMirror 
 
 Takes HTML and outputs ProseMirror compatible JSON.
 
