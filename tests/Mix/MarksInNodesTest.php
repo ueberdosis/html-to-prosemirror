@@ -190,8 +190,13 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'ordered list item',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'ordered list item',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
@@ -199,8 +204,13 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'ordered list item',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'ordered list item',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
@@ -208,8 +218,13 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'ordered list item',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'ordered list item',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
@@ -222,8 +237,13 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'unordered list item',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'unordered list item',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
@@ -260,8 +280,13 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'unordered list item',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'unordered list item',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
@@ -279,7 +304,6 @@ class MarksInNodesTest extends TestCase
             ],
         ];
 
-        // $this->outputJson((new Renderer)->render($html));
         $this->assertEquals($json, (new Renderer)->render($html));
     }
 }

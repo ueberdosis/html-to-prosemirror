@@ -69,8 +69,13 @@ class BulletListTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'Example',
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Example',
+                                        ],
+                                    ],
                                 ],
                             ],
                         ],
