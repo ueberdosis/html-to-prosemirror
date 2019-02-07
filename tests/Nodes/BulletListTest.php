@@ -57,7 +57,7 @@ class BulletListTest extends TestCase
     /** @test */
     public function bullet_list_item_with_text_only_gets_wrapped_in_paragraph()
     {
-        $html = '<ul><li>Example</li><li>Text</li></ul>';
+        $html = '<ul><li>Example</li><li>Text <em>Test</em></li></ul>';
 
         $json = [
             'type' => 'doc',
@@ -69,13 +69,8 @@ class BulletListTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'paragraph',
-                                    'content' => [
-                                        [
-                                            'type' => 'text',
-                                            'text' => 'Example',
-                                        ],
-                                    ],
+                                    'type' => 'text',
+                                    'text' => 'Example',
                                 ],
                             ],
                         ],
@@ -87,7 +82,16 @@ class BulletListTest extends TestCase
                                     'content' => [
                                         [
                                             'type' => 'text',
-                                            'text' => 'Text',
+                                            'text' => 'Text ',
+                                        ],
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Test',
+                                            'marks' => [
+                                                [
+                                                    'type' => 'italic',
+                                                ],
+                                            ],
                                         ],
                                     ],
                                 ],

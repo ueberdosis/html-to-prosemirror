@@ -231,21 +231,26 @@ class MarksInNodesTest extends TestCase
                             'type' => 'list_item',
                             'content' => [
                                 [
-                                    'type' => 'text',
-                                    'text' => 'unordered list item with ',
-                                ],
-                                [
-                                    'type' => 'text',
-                                    'text' => 'link',
-                                    'marks' => [
+                                    'type' => 'paragraph',
+                                    'content' => [
                                         [
-                                            'type' => 'link',
-                                            'attrs' => [
-                                                'href' => 'https://scrumpy.io',
-                                            ],
+                                            'type' => 'text',
+                                            'text' => 'unordered list item with ',
                                         ],
                                         [
-                                            'type' => 'bold',
+                                            'type' => 'text',
+                                            'text' => 'link',
+                                            'marks' => [
+                                                [
+                                                    'type' => 'link',
+                                                    'attrs' => [
+                                                        'href' => 'https://scrumpy.io',
+                                                    ],
+                                                ],
+                                                [
+                                                    'type' => 'bold',
+                                                ],
+                                            ],
                                         ],
                                     ],
                                 ],
