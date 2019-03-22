@@ -26,6 +26,7 @@ class Renderer
         Nodes\CodeBlockWrapper::class,
         Nodes\HardBreak::class,
         Nodes\Heading::class,
+        Nodes\Image::class,
         Nodes\ListItem::class,
         Nodes\OrderedList::class,
         Nodes\Paragraph::class,
