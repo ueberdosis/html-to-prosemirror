@@ -10,7 +10,7 @@ class Node
 
     protected $DOMNode;
 
-    function __construct($DOMNode)
+    public function __construct($DOMNode)
     {
         $this->DOMNode = $DOMNode;
     }

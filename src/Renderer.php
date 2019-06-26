@@ -2,7 +2,6 @@
 
 namespace Scrumpy\HtmlToProseMirror;
 
-use Exception;
 use DOMElement;
 use DOMDocument;
 use Minify_HTML;
@@ -151,4 +150,3 @@ class Renderer
         return false;
     }
 }
-

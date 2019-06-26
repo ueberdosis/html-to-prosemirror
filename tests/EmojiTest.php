@@ -3,7 +3,6 @@
 namespace Scrumpy\HtmlToProseMirror\Test;
 
 use Scrumpy\HtmlToProseMirror\Renderer;
-use Scrumpy\HtmlToProseMirror\Test\TestCase;
 
 class EmojiTest extends TestCase
 {

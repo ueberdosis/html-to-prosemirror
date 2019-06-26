@@ -63,14 +63,14 @@ class MarksInNodesTest extends TestCase
                 [
                     'type' => 'heading',
                     'attrs' => [
-                        'level' => '1'
+                        'level' => '1',
                     ],
                     'content' => [
                         [
                             'type' => 'text',
-                            'text' => 'Headline 1'
-                        ]
-                    ]
+                            'text' => 'Headline 1',
+                        ],
+                    ],
                 ],
                 [
                     'type' => 'paragraph',
@@ -128,7 +128,7 @@ class MarksInNodesTest extends TestCase
                                 [
                                     'type' => 'link',
                                     'attrs' => [
-                                        'href' => 'https://scrumpy.io'
+                                        'href' => 'https://scrumpy.io',
                                     ],
                                 ],
                             ],
@@ -167,7 +167,7 @@ class MarksInNodesTest extends TestCase
         $json = [
             'type' => 'doc',
             'content' =>
-                [
+            [
                 [
                     'type' => 'heading',
                     'attrs' => [
