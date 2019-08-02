@@ -2,8 +2,8 @@
 
 namespace Scrumpy\HtmlToProseMirror;
 
-use DOMElement;
 use DOMDocument;
+use DOMElement;
 use Minify_HTML;
 
 class Renderer
@@ -13,10 +13,10 @@ class Renderer
     protected $storedMarks = [];
 
     protected $marks = [
-        Marks\Link::class,
         Marks\Bold::class,
         Marks\Code::class,
         Marks\Italic::class,
+        Marks\Link::class,
     ];
 
     protected $nodes = [
@@ -42,7 +42,7 @@ class Renderer
         );
 
         return [
-            'type' => 'doc',
+            'type'    => 'doc',
             'content' => $content,
         ];
     }
