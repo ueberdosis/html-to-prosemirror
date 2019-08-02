@@ -5,12 +5,12 @@ namespace Scrumpy\HtmlToProseMirror\Test\Nodes;
 use Scrumpy\HtmlToProseMirror\Renderer;
 use Scrumpy\HtmlToProseMirror\Test\TestCase;
 
-class BoldTest extends TestCase
+class ItalicTest extends TestCase
 {
     /** @test */
-    public function b_and_strong_gets_rendered_correctly()
+    public function i_and_em_gets_rendered_correctly()
     {
-        $html = '<p><strong>Example text using strong</strong> and <b>some example text using b</b></p>';
+        $html = '<p><i>Example text using i</i> and <em>some example text using em</em></p>';
 
         $json = [
             'type'    => 'doc',
@@ -20,10 +20,10 @@ class BoldTest extends TestCase
                     'content' => [
                         [
                             'type'  => 'text',
-                            'text'  => 'Example text using strong',
+                            'text'  => 'Example text using i',
                             'marks' => [
                                 [
-                                    'type' => 'bold',
+                                    'type' => 'italic',
                                 ],
                             ],
                         ],
@@ -33,10 +33,10 @@ class BoldTest extends TestCase
                         ],
                         [
                             'type'  => 'text',
-                            'text'  => 'some example text using b',
+                            'text'  => 'some example text using em',
                             'marks' => [
                                 [
-                                    'type' => 'bold',
+                                    'type' => 'italic',
                                 ],
                             ],
                         ],
