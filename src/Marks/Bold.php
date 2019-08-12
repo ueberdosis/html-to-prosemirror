@@ -6,7 +6,7 @@ class Bold extends Mark
 {
     public function matching()
     {
-        return $this->DOMNode->nodeName === 'strong';
+        return $this->DOMNode->nodeName === 'strong' || $this->DOMNode->nodeName === 'b';
     }
 
     public function data()
