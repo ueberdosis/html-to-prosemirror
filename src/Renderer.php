@@ -2,8 +2,8 @@
 
 namespace Scrumpy\HtmlToProseMirror;
 
-use DOMDocument;
 use DOMElement;
+use DOMDocument;
 use Minify_HTML;
 
 class Renderer
