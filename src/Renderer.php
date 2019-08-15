@@ -106,7 +106,6 @@ class Renderer
                     $item = array_merge($item, [
                         'marks' => $this->storedMarks,
                     ]);
-                    $this->storedMarks = [];
                 }
 
                 if ($class->wrapper) {
@@ -126,6 +125,8 @@ class Renderer
                 if ($child->hasChildNodes()) {
                     $nodes = array_merge($nodes, $this->renderChildren($child));
                 }
+
+                array_pop($this->storedMarks);
             }
         }
 
