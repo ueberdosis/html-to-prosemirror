@@ -8,7 +8,7 @@ use Scrumpy\HtmlToProseMirror\Test\TestCase;
 class BoldTest extends TestCase
 {
     /** @test */
-    public function b_and_strong_gets_rendered_correctly()
+    public function b_and_strong_get_rendered_correctly()
     {
         $html = '<p><strong>Example text using strong</strong> and <b>some example text using b</b></p>';
 

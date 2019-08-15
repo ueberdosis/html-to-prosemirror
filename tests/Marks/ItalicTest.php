@@ -8,7 +8,7 @@ use Scrumpy\HtmlToProseMirror\Test\TestCase;
 class ItalicTest extends TestCase
 {
     /** @test */
-    public function i_and_em_gets_rendered_correctly()
+    public function i_and_em_get_rendered_correctly()
     {
         $html = '<p><i>Example text using i</i> and <em>some example text using em</em></p>';
 
