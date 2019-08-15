@@ -29,6 +29,11 @@ class Renderer
         Nodes\ListItem::class,
         Nodes\OrderedList::class,
         Nodes\Paragraph::class,
+        Nodes\Table::class,
+        Nodes\TableCell::class,
+        Nodes\TableHeader::class,
+        Nodes\TableRow::class,
+        Nodes\TableWrapper::class,
         Nodes\Text::class,
         Nodes\User::class,
     ];
