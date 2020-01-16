@@ -2,17 +2,17 @@
 
 namespace Scrumpy\HtmlToProseMirror\Marks;
 
-class Sub extends Mark
+class Superscript extends Mark
 {
     public function matching()
     {
-        return $this->DOMNode->nodeName === 'sub';
+        return $this->DOMNode->nodeName === 'superscript';
     }
 
     public function data()
     {
         return [
-            'type' => 'sub',
+            'type' => 'sup',
         ];
     }
 }

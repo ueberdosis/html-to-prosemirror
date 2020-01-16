@@ -5,10 +5,10 @@ namespace Scrumpy\HtmlToProseMirror\Test\Nodes;
 use Scrumpy\HtmlToProseMirror\Renderer;
 use Scrumpy\HtmlToProseMirror\Test\TestCase;
 
-class SubTest extends TestCase
+class SubscriptTest extends TestCase
 {
     /** @test */
-    public function sub_gets_rendered_correctly()
+    public function subscript_gets_rendered_correctly()
     {
         $html = '<p><sub>Example Text</sub></p>';
 

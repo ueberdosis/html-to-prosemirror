@@ -17,8 +17,8 @@ class Renderer
         Marks\Code::class,
         Marks\Italic::class,
         Marks\Link::class,
-        Marks\Sub::class,
-        Marks\Sup::class,
+        Marks\Subscript::class,
+        Marks\Superscript::class,
     ];
 
     protected $nodes = [
