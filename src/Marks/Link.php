@@ -12,7 +12,7 @@ class Link extends Mark
     public function data()
     {
         $data = [
-            'type' => $this->nodeType,
+            'type' => 'link',
         ];
 
         $attrs = [];
