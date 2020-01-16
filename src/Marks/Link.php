@@ -15,6 +15,8 @@ class Link extends Mark
             'type' => 'link',
             'attrs' => [
                 'href' => $this->DOMNode->getAttribute('href'),
+                'target' => $this->DOMNode->getAttribute('target'),
+                'rel' => $this->DOMNode->getAttribute('rel'),
             ],
         ];
     }
