@@ -23,7 +23,7 @@ class SubscriptTest extends TestCase
                             'text' => 'Example Text',
                             'marks' => [
                                 [
-                                    'type' => 'sub',
+                                    'type' => 'subscript',
                                 ],
                             ],
                         ],

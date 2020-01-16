@@ -23,7 +23,7 @@ class SuperscriptTest extends TestCase
                             'text' => 'Example Text',
                             'marks' => [
                                 [
-                                    'type' => 'sup',
+                                    'type' => 'superscript',
                                 ],
                             ],
                         ],
