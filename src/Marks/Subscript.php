@@ -6,13 +6,13 @@ class Subscript extends Mark
 {
     public function matching()
     {
-        return $this->DOMNode->nodeName === 'subscript';
+        return $this->DOMNode->nodeName === 'sub';
     }
 
     public function data()
     {
         return [
-            'type' => 'sub',
+            'type' => 'subscript',
         ];
     }
 }
