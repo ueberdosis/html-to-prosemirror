@@ -10,7 +10,7 @@ class LinkTest extends TestCase
     /** @test */
     public function link_gets_rendered_correctly()
     {
-        $html = '<a href="https://scrumpy.io">Example Link</a>';
+        $html = '<a href="https://scrumpy.io" target="_blank" rel="noopener">Example Link</a>';
 
         $json = [
             'type' => 'doc',
@@ -23,6 +23,8 @@ class LinkTest extends TestCase
                             'type' => 'link',
                             'attrs' => [
                                 'href' => 'https://scrumpy.io',
+                                'target' => '_blank',
+                                'rel' => 'noopener',
                             ],
                         ],
                     ],

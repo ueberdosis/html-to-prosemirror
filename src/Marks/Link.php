@@ -11,11 +11,24 @@ class Link extends Mark
 
     public function data()
     {
-        return [
+        $data = [
             'type' => 'link',
-            'attrs' => [
-                'href' => $this->DOMNode->getAttribute('href'),
-            ],
         ];
+
+        $attrs = [];
+
+        if ($target = $this->DOMNode->getAttribute('target')) {
+            $attrs['target'] = $target;
+        }
+
+        if ($rel = $this->DOMNode->getAttribute('rel')) {
+            $attrs['rel'] = $rel;
+        }
+
+        $attrs['href'] = $this->DOMNode->getAttribute('href');
+
+        $data['attrs'] = $attrs;
+
+        return $data;
     }
 }
