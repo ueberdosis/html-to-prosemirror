@@ -19,6 +19,7 @@ class Renderer
         Marks\Link::class,
         Marks\Subscript::class,
         Marks\Superscript::class,
+        Marks\Underline::class,
     ];
 
     protected $nodes = [
