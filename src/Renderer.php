@@ -19,9 +19,11 @@ class Renderer
         Marks\Link::class,
         Marks\Subscript::class,
         Marks\Superscript::class,
+        Marks\Underline::class,
     ];
 
     protected $nodes = [
+        Nodes\Blockquote::class,
         Nodes\BulletList::class,
         Nodes\CodeBlock::class,
         Nodes\CodeBlockWrapper::class,
