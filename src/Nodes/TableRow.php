@@ -1,6 +1,6 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror\Nodes;
+namespace HtmlToProseMirror\Nodes;
 
 class TableRow extends Node
 {

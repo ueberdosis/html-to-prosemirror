@@ -1,9 +1,9 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror\Test\Mix;
+namespace HtmlToProseMirror\Test\Mix;
 
-use Scrumpy\HtmlToProseMirror\Renderer;
-use Scrumpy\HtmlToProseMirror\Test\TestCase;
+use HtmlToProseMirror\Renderer;
+use HtmlToProseMirror\Test\TestCase;
 
 class MultipleMarksTest extends TestCase
 {
