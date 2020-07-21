@@ -1,9 +1,9 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror\Test\Nodes;
+namespace HtmlToProseMirror\Test\Nodes;
 
-use Scrumpy\HtmlToProseMirror\Renderer;
-use Scrumpy\HtmlToProseMirror\Test\TestCase;
+use HtmlToProseMirror\Renderer;
+use HtmlToProseMirror\Test\TestCase;
 
 class ItalicTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror\Marks;
+namespace HtmlToProseMirror\Marks;
 
 class Code extends Mark
 {

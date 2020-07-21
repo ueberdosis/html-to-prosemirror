@@ -1,6 +1,6 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror;
+namespace HtmlToProseMirror;
 
 use DOMElement;
 use DOMDocument;

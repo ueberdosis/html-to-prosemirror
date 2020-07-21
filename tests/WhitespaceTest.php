@@ -1,8 +1,8 @@
 <?php
 
-namespace Scrumpy\HtmlToProseMirror\Test;
+namespace HtmlToProseMirror\Test;
 
-use Scrumpy\HtmlToProseMirror\Renderer;
+use HtmlToProseMirror\Renderer;
 
 class WhitespaceTest extends TestCase
 {
