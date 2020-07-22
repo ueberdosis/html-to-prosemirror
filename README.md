@@ -46,6 +46,7 @@ Pull Requests are welcome.
 ## Credits
 
 - [Hans Pagel](https://github.com/hanspagel)
+- [localheinz](https://github.com/localheinz)
 - [sauerbraten](https://github.com/sauerbraten)
 - [WiebkeVog](https://github.com/WiebkeVog)
 - [All Contributors](../../contributors)
