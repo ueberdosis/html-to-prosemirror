@@ -17,7 +17,7 @@ composer require ueberdosis/html-to-prosemirror
 ## Usage
 
 ```php
-(new \Scrumpy\HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
+(new \HtmlToProseMirror\Renderer)->render('<p>Example Text</p>')
 ```
 
 ## Output
