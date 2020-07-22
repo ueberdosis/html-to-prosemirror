@@ -17,6 +17,7 @@ class Renderer
         Marks\Code::class,
         Marks\Italic::class,
         Marks\Link::class,
+        Marks\Strike::class,
         Marks\Subscript::class,
         Marks\Superscript::class,
         Marks\Underline::class,
