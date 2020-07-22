@@ -1,6 +1,6 @@
 <?php
 
-namespace HtmlToProseMirror\Test\Nodes;
+namespace HtmlToProseMirror\Test\Marks;
 
 use HtmlToProseMirror\Renderer;
 use HtmlToProseMirror\Test\TestCase;
