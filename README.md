@@ -49,6 +49,7 @@ Pull Requests are welcome.
 - [localheinz](https://github.com/localheinz)
 - [sauerbraten](https://github.com/sauerbraten)
 - [WiebkeVog](https://github.com/WiebkeVog)
+- [pa-bouly](https://github.com/pa-bouly)
 - [All Contributors](../../contributors)
 
 ## License
