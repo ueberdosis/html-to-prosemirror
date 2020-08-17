@@ -7,6 +7,7 @@ Takes HTML and outputs ProseMirror compatible JSON.
 [![](https://img.shields.io/packagist/v/ueberdosis/html-to-prosemirror.svg)](https://packagist.org/packages/ueberdosis/html-to-prosemirror)
 [![Integrate](https://github.com/ueberdosis/html-to-prosemirror/workflows/Integrate/badge.svg?branch=main)](https://github.com/ueberdosis/html-to-prosemirror/actions)
 [![](https://img.shields.io/packagist/dt/ueberdosis/html-to-prosemirror.svg)](https://packagist.org/packages/ueberdosis/html-to-prosemirror)
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub)](https://github.com/sponsors/ueberdosis)
 
 ## Installation
 
