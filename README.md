@@ -53,6 +53,10 @@ Pull Requests are welcome.
 - [pa-bouly](https://github.com/pa-bouly)
 - [All Contributors](../../contributors)
 
+## Related packages
+
+- [html-to-prosemirror-js](https://github.com/enVolt/html-to-prosemirror) by @enVolt
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
