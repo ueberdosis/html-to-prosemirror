@@ -34,7 +34,6 @@ class HardBreakTest extends TestCase
             ],
         ];
 
-        // $this->outputJson((new Renderer)->render($html));
         $this->assertEquals($json, (new Renderer)->render($html));
     }
 

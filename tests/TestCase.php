@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
-    public function outputJson($data)
+    public function debugJson($data)
     {
         $climate = new CLImate;
         $climate->json($data);
