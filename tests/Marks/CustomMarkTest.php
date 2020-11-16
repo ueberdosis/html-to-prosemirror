@@ -27,7 +27,7 @@ class CustomMarkTest extends TestCase
                                     'attrs' => [
                                         'foo' => 'bla bla',
                                         'bar' => 'nanana',
-                                    ]
+                                    ],
                                 ],
                             ],
                         ],
