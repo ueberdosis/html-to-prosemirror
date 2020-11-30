@@ -4,7 +4,6 @@ namespace HtmlToProseMirror;
 
 use DOMElement;
 use DOMDocument;
-use Minify_HTML;
 
 class Renderer
 {
