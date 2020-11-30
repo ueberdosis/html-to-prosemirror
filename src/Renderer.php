@@ -150,7 +150,7 @@ class Renderer
 
     private function stripWhitespace(string $value): string
     {
-        return Minify_HTML::minify($value);
+        return (new Minify)->process($value);
     }
 
     private function getDocumentBody(): DOMElement
