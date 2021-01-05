@@ -56,4 +56,54 @@ class OrderedListTest extends TestCase
 
         $this->assertEquals($json, (new Renderer)->render($html));
     }
+
+    /** @test */
+    public function ordered_list_has_correct_offset()
+    {
+        $html = '<ol start="3"><li><p>Example</p></li><li><p>Text</p></li></ol>';
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'ordered_list',
+                    'attrs' => [
+                        'order' => 3,
+                    ],
+                    'content' => [
+                        [
+                            'type' => 'list_item',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Example',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            'type' => 'list_item',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Text',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->render($html));
+    }
 }
