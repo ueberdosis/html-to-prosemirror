@@ -12,7 +12,7 @@ class BulletList extends Node
     public function data()
     {
         return [
-            'type' => 'bullet_list',
+            'type' => $this->lowerCamelCasedSyntax ? 'bulletList' : 'bullet_list',
         ];
     }
 }

@@ -51,7 +51,54 @@ class BulletListTest extends TestCase
             ],
         ];
 
-        $this->assertEquals($json, (new Renderer)->render($html));
+        $this->assertEquals($json, (new Renderer(true))->render($html));
+    }
+
+    /** @test */
+    public function bullet_list_gets_rendered_correctly_with_lower_camel_casing()
+    {
+        $html = '<ul><li><p>Example</p></li><li><p>Text</p></li></ul>';
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'bulletList',
+                    'content' => [
+                        [
+                            'type' => 'listItem',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Example',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            'type' => 'listItem',
+                            'content' => [
+                                [
+                                    'type' => 'paragraph',
+                                    'content' => [
+                                        [
+                                            'type' => 'text',
+                                            'text' => 'Text',
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer(true))->withLowerCamelCasedSyntax()->render($html));
     }
 
     /** @test */

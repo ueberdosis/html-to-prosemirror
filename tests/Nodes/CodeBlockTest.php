@@ -31,6 +31,29 @@ class CodeBlockTest extends TestCase
     }
 
     /** @test */
+    public function code_block_gets_rendered_correctly_with_lower_camel_casing()
+    {
+        $html = '<pre><code>Example Text</code></pre>';
+
+        $json = [
+            'type' => 'doc',
+            'content' => [
+                [
+                    'type' => 'codeBlock',
+                    'content' => [
+                        [
+                            'type' => 'text',
+                            'text' => 'Example Text',
+                        ],
+                    ],
+                ],
+            ],
+        ];
+
+        $this->assertEquals($json, (new Renderer)->withLowerCamelCasedSyntax()->render($html));
+    }
+
+    /** @test */
     public function code_block_with_language_gets_rendered_correctly()
     {
         $html = '<pre><code class="language-css">body { display: none }</code></pre>';
