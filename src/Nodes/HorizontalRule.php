@@ -12,7 +12,7 @@ class HorizontalRule extends Node
     public function data()
     {
         return [
-            'type' => 'horizontal_rule',
+            'type' => $this->lowerCamelCasedSyntax ? 'horizontalRule' : 'horizontal_rule',
         ];
     }
 }

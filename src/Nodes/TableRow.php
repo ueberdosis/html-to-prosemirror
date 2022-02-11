@@ -13,6 +13,7 @@ class TableRow extends Node
     {
         return [
             'type' => 'table_row',
+            'type' => $this->lowerCamelCasedSyntax ? 'tableRow' : 'table_row',
         ];
     }
 }

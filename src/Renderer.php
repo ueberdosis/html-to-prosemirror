@@ -11,6 +11,8 @@ class Renderer
 
     protected $storedMarks = [];
 
+    protected $lowerCamelCasedSyntax = false;
+
     protected $marks = [
         Marks\Bold::class,
         Marks\Code::class,
@@ -42,6 +44,13 @@ class Renderer
         Nodes\Text::class,
         Nodes\User::class,
     ];
+
+    public function withLowerCamelCasedSyntax()
+    {
+        $this->lowerCamelCasedSyntax = true;
+
+        return $this;
+    }
 
     public function withMarks($marks = null)
     {
@@ -223,7 +232,7 @@ class Renderer
     private function getMatchingClass($node, $classes)
     {
         foreach ($classes as $class) {
-            $instance = new $class($node);
+            $instance = new $class($node, $this->lowerCamelCasedSyntax);
 
             if ($instance->matching()) {
                 return $instance;
